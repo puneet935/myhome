@@ -1,0 +1,462 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Home</title>
+    <!-- link with bootstrap online -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- link with bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- link with csss style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- link with google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+
+
+    <script>
+        function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+
+
+
+    </head>
+    <body>
+
+    <!--  start navbar and banner -->
+        <div class="container   ">
+            <!------------------- logo and icon------------ -->
+            <div class="row pt-2">
+                <div class="col-md-3 text-center logo" id="home">
+                    <img src="img/logo.png" width="70px" alt=""><span><b>MY HOME</b></span>
+                </div>
+                <div class="col-md-5 col-sm-12 text-center"><button class="btn btn-outline-info rounded-0" data-bs-toggle="modal" data-bs-target="#get">Get in touch</button></div>
+                <div class="col-md-4  d-none d-sm-block  text-center" >
+                        <i class="bi bi-whatsapp fs-5 pe-2"></i>
+                        <i class="bi bi-facebook fs-5 pe-2 "></i>
+                        <i class="bi bi-twitter-x fs-5 pe-2 "></i>
+                        <i class="bi bi-instagram fs-5 pe-2 "></i>
+                        <i class="bi bi-linkedin fs-5"></i>
+                </div>
+            </div>
+
+    <!----------------- modal -------------->
+
+
+    <div class="modal fade" id="get" tabindex="-1" aria-labelledby="get1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="get1">Contact Us</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Full Name</label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Email Id</label>
+                <input type="email" class="form-control" id="">
+            </div>
+            <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message</label>
+                <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-dark rounded-0" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-info rounded-0">Send message</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+            <!------------------ navbar and banner  --------------->
+
+
+
+            <div class="row menu mt-3">
+                <div class="col-md-6 offset-3">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link" href="#project">Project</a>
+                            <a class="nav-link" href="#design">Design</a>
+                            <a class="nav-link" href="#services">Services</a>
+                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    </nav>
+                </div>
+                
+            </div>
+
+
+
+            <!-- -----------banner images-------------------- -->
+
+            <div class="row text-center">
+                <div class="col-md-6"><img src="img/5.png" width="80%" alt=""></div>
+                <div class="col-md-6"><img src="img/2.png" width="70%" alt=""></div>
+            </div>
+        </div>
+    
+
+    <!------- ended navbar and banner     -->
+
+
+    <!-- ---------inspection-------  -->
+
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-10 offset-1  border border-bottom-0 rounded-2 p-4 inspection  mb-4">
+                <div class="row">
+                    <div class="col-md-5 ">
+                        <h3>Send Inspection Request</h3>
+                    </div>
+                    <div class="col-md-3 ">
+                        <input type="text" name="" id="" placeholder="Enter Full Name" class="form-control">
+                    </div>
+                    <div class="col-md-3 ">
+                        <input type="number" name="" id="" placeholder="Phone Number" class="form-control">
+                    </div>
+                    <div class="col-md-1 ">
+                        <button class="btn btn-danger rounded-0">Send</button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------Our project --------------->
+    <div class="container" id="project">
+        <div class="row">
+            <div class="col-md-6 border  bg-info ps-5 p-5 ">
+                <h5>Build Our Dream</h5>
+                <h2>20 Years Of Undefeated Success</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque vero praesentium est sequi accusantium porro impedit doloremque dolorum repudiandae, ad corrupti beatae? Dignissimos hic doloremque a necessitatibus mollitia quod.</P>
+                <br><button class="btn btn-dark rounded-0 px-4">Work With Us</button>
+            </div>
+            <div class="col-md-6">
+                <div class="row ps-5">
+                    <div class="col-md-6">
+                        <h1><b>512+</b></h1>
+                        <span>Successfull Project <br>Finished</span>
+                    </div>
+                    <div class="col-md-6">
+                        <h1><b>20+</b></h1>
+                        <span>Years of experience<br> with proud</span>
+                    </div>
+                </div>
+
+                <div class="row ps-5 mt-5 pt-5" >
+                    <div class="col-md-6">
+                        <h1><b>1120+</b></h1>
+                        <span>Revenue in 2018 investment</span>
+                    </div>
+                    <div class="col-md-6">
+                        <h1><b>1320+</b></h1>
+                        <span>Colleagues & counting <br>more daily</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------our design -->
+    <div class="container" id="design">
+        <div class="row mt-4">
+            <h2 class="py-3 border-bottom text-center ">Our Design Indoor Space for Living</h2>
+            <div class="col-md-4">
+                <img src="img/5.1.jpg"  alt=""  class="img-thumbnail p-3" width="100%">
+                <b>Kitchen Designs</b><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/6.1.jpg" class="img-thumbnail p-3" alt="" width="100%">
+                <b>Bedroom Designs</b><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/10.1.jpg" alt="" class="img-thumbnail p-3" width="100%">
+                <b>Hall Designs</b><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!----------- working   ---------------- -->
+    <div class="container mt-5">
+
+        <div class="row mb-3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias magnam amet ratione accusamus dicta! Animi minus necessitatibus deleniti tenetur ad maiores. Veritatis ipsa enim, alias quibusdam ab exercitationem distinctio sint.
+        </div>
+        <div class="row">
+            <div class="col-md-6 border-4 border-end border-bottom border-info-subtle">
+                <img src="img/1.1.jpg" alt="" width="100%" class="p-3 pt-4">
+            </div>
+            
+            <div class="col-md-6 ps-5" id="services">
+                <div class="row text-center ">
+                        <h3><b class=" border-bottom border-2 border-info border-end">Our Servies</b></h3>   
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <i class="bi bi-box fs-3"></i> <b>Architecture</b><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="col-md-6">
+                        <i class="bi bi-pencil-square fs-3"></i> <b>Landscape Design</b><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <i class="bi bi-building fs-3"></i> <b>Exterior Design</b><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="col-md-6">
+                        <i class="bi bi-bounding-box fs-3"></i> <b>Site Planning</b><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <i class="bi bi-hourglass fs-3"></i> <b>Furniture Design</b><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="col-md-6">
+                        <i class="bi bi-image fs-3"></i> <b>Interior Design</b><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>            
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------form and FAQ ------------->
+    <div class="container mt-5">
+        <div class="row text-center border-bottom"><h3> Messages & FAQ </h3></div>
+        <div class="row mt-5">
+            <!-- massages -->
+            <div class="col-md-6">
+                <form action="" class="border p-3">
+                    <label>Name</label>
+                    <input type="text" class="form-control"><br>
+                    <label for="">Email</label>
+                    <input type="email" class="form-control"><br>
+                    <span><b>Type of servies</b></span><br>
+                    <div class="row justify-content-between mt-3">
+                        <div class="col-md-4 p-2 border ">
+                        New Development <input type="checkbox" name="t1" class="float-end" >
+                        </div>
+                        <div class="col-md-4  p-2 border">
+                        Investment Sales <input type="checkbox" name="t1" class="float-end" >
+                        </div>
+                    </div>
+                    <div class="row justify-content-between mt-3">
+                        <div class="col-md-4 p-2 border ">
+                        Sales & Rentals <input type="checkbox" name="t1" class="float-end" >
+                        </div>
+                        <div class="col-md-4 p-2 border">
+                        Leasing <input type="checkbox" class="float-end" name="t1">
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-4">
+                        <b>Comment or Message</b>
+                        <textarea name="" id=""  cols="3" rows="4"></textarea>
+                    </div>
+                    
+                    <button class="btn btn-info rounded-0">Submit</button>
+                    
+                </form>
+            </div>
+
+            <!-- FAQ -->
+        <div class="col-md-6" id="about">
+            <div class="row text-center"><h1>Frequently Asked Question</h1></div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        How to create cities and communites that solve?
+                    </button>
+                    </h4>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Construction of the winning 
+                    </button>
+                    </h4>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        How to Create Architecture?
+                    </button>
+                    </h4>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Our Client -->
+    <div class="container client">
+        <div class="row  mt-5">
+            <h2 class="border-bottom text-center">Our Client Are Saying</h2>
+            <div id="slider1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6  ps-5" >
+                            <div class="row"> ★★★★☆</div> 
+                            <div class="row">Lorem ipsum dolor sit amet consect voluptatibus, porro dolores architenventm soluta quae. Unde, reprehenderit!</div> 
+                            <img src="img/c1.png"  width="40px" class="d-block rounded-circle" alt="">
+                        </div>
+                        <div class="col-md-6  ps-5">
+                            <div class="row">★★★★☆</div> 
+                            <div class="row">Lorem ipsum dolor sit amee nesciuntut expedita, ad dolorem aperiam soluta quae. Unde, reprehenderit!</div> 
+                            <img src="img/c2.png" width="40px" class="d-block rounded-circle"  alt=""> 
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6  ps-5" >
+                            <div class="row"> ★★★★★</div> 
+                            <div class="row">Lorem ipsum dolor sit amet consectitecto  dolorem aperiam soluta quae. Unde, reprehenderit!</div> 
+                            <img src="img/c3.png"  width="40px" class="rounded-circle" alt="">
+                        </div>
+                        <div class="col-md-6  ps-5">
+                            <div class="row">★★★☆☆</div> 
+                            <div class="row">Lorem is ul sint voluptatibus, porro dolo assumenda ut expedita, ad dolorem aperiam soluta quae. Unde, reprehenderit!</div> 
+                            <img src="img/c4.png" width="40px"  alt=""> 
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6  ps-5" >
+                            <div class="row"> ★★★★★</div> 
+                            <div class="row">Lorem ipsum dolor sit amet consectiam soluta quae. Unde, reprehenderit! t expedita, ad dolorem aperia</div> 
+                            <img src="img/c5.png"  width="40px" class="rounded-circle" alt="">
+                        </div>
+                        <div class="col-md-6  ps-5">
+                            <div class="row">★★★★★</div> 
+                            <div class="row">Lorem ipsum dolor sit amet coit inventore nesciunt earum assumenda ututa quae. Unde, reprehenderit!</div> 
+                            <img src="img/c3.png" width="40px"  alt=""> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- end our client  -->
+
+    
+
+    <!-- Footer start -->
+    <div class="container mt-5 bg-info-subtle py-5 px-3 ">
+        <div class="row" id="contact">
+            <div class="col-md-3">
+                <img src="img/logo.png" class="logo" width="70px" alt=""><span><b>MY HOME</b></span><br><br>
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit Quas,nesciunt ipsum eligendi.<br><br>
+                <i class="bi bi-whatsapp fs-5 pe-2"></i>
+                <i class="bi bi-facebook fs-5 pe-2 "></i>
+                <i class="bi bi-twitter-x fs-5 pe-2 "></i>
+                <i class="bi bi-instagram fs-5 pe-2 "></i>
+                <i class="bi bi-linkedin fs-5"></i>
+            </div>
+            <div class="col-md-3">
+                <h5><b>Our Company</b></h5>
+                Who we Are<br>
+                About Company<br>
+                Services We Provide<br>
+                What We Have Done
+            </div>
+            <div class="col-md-3">
+                <h5><b>Our Services</b></h5>
+                Architecture<br>
+                Site Planning<br>
+                Furniture Design<br>
+                Exterior &  Interior Design<br>
+                Landscape Design
+            </div>
+            <div class="col-md-3">
+                <h5><b>Contact Details</b></h5>
+                457,Borivali (w),<br>
+                <i class="bi bi-phone-fill"></i> 123456789<br>
+                <i class="bi bi-telephone-fill"></i> (002)123-4567<br>
+                <i class="bi bi-envelope-at-fill"></i> myhome@infra.com<br>  
+            </div>
+        </div>
+    </div>  
+
+<button class="float-sm-end sticky-bottom btn btn-info rounded-0" onclick="topFunction()"><img src="img/arrow.png" width="25px" height="25px" alt=""></button>
+        <!-- footer ended -->
+    <div class="container bg-info">
+        <div class="row text-end text-white">
+            <p>MY HOME @2026    INFRASTRUCTURE</p>
+        </div>
+    </div>
+
+
+
+
+    </body>
+    </html>

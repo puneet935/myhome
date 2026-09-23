@@ -1,0 +1,16 @@
+*{   
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    cursor: pointer;
+}
+.menu {
+    height: 100px;
+}
+.inspection {
+    background-color: aliceblue;
+    margin-top: -50px;
+    height: 150px;
+}
+
+    
